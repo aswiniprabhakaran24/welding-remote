@@ -12,12 +12,105 @@ margin:0px;
 box-sizing:box-border;
 
 }
-.rectangle {
-    margin-top: 300px;
+.rec {
+    margin-top: 80px;
     width: 550px;
-	height: 500px;
+	height: 150px;
 	display: inline-block;
 	border: 2px solid black;
+	background-color: white;
+	padding: 10px;
+	margin-left: 40px;
+}
+.com {
+    margin-left: 10px;
+	margin-top: 20px;
+	display: inline-block; 
+}
+.centered {
+    margin-left: 10px;
+	margin-top: 20px;
+	display: inline-block;
+	
+	 
+}
+.device{
+    margin-left: 270px;
+	margin-top: 20px;
+	display: inline-block;
+	
+}
+.dev {
+    margin-left: 20px;
+	margin-top: 10px; 
+	display: inline-block;
+	width: 5px;
+	margin-right: 20px;
+}
+
+.moc{
+    margin-left: 100px;
+	display: inline-block;
+	width: 150px;
+	
+}
+.open{
+     background-color: white;
+	 color: black;
+	 padding: 5px 10px;
+	 cursor: pointer;
+	 border: 1px solid black;
+	 margin-top: 40px;
+	 margin-left: 120px;
+	 border-radius: 1px;
+	 display: inline-block;
+	 margin-bottom: 20px;
+}
+
+.close{
+     background-color: white;
+	 color: black;
+	 padding: 5px 10px;
+	 cursor: pointer;
+	 border: 1px solid black;
+	 margin-top: 40px;
+	 margin-left: 150px;
+	 border-radius: 1px;
+	 display: inline-block;
+	 margin-bottom: 20px;
+}
+
+.read{
+     background-color: white;
+	 color: black;
+	 padding: 5px 10px;
+	 cursor: pointer;
+	 border: 1px solid black;
+	 margin-left: 10px;
+	 border-radius: 1px;
+	 display: inline-block;
+	  
+}
+
+.write{
+     background-color: white;
+	 color: black;
+	 padding: 5px 10px;
+	 cursor: pointer;
+	 border: 1px solid black;
+	 margin-left: 80px;
+	 border-radius: 1px;
+	 display: inline-block;
+	  
+}
+
+     
+.rectangle {
+    margin-top: 30px;
+    width: 550px;
+	height: 400px;
+	display: inline-block;
+	border: 2px solid  white;
 	background-color: white;
 	padding: 10px;
 	margin-left: 40px;
@@ -27,23 +120,23 @@ box-sizing:box-border;
 }
 
 .rectangle1 {
-    margin-top: 25px;
+    
 	width: 450px;
 	height: 150px;
-	border: 2px solid yellow;
+	border: black;
 	background-color: white;
     padding: 15px 15px;
 	margin-left: 20px;
 	margin-right: 20px;
-	margin-bottom: 10px;
+	
 }
 
 .channel {
     margin-left: 30px;
 	margin-right: 10px;
 	display: inline-block;
-	margin-top: 5px;
-	padding: 10px;
+	margin-top: 25px;
+	padding: 10px; 
 }
 
 .drop{
@@ -57,7 +150,7 @@ box-sizing:box-border;
 .first {
     margin-left: 30px;
 	display: inline-block;
-	margin-top: 5px;
+	margin-top: 25px;
 	padding: 10px 10px;
 }
 .key {
@@ -65,10 +158,62 @@ box-sizing:box-border;
 	display: inline-block;
 	width: 150px;
 }
+
     
 </style>
 </head>
 <body>
+<div class="rec">
+    <div class="com">
+      <label for"com"><b>COM</b></label>
+	</div>
+	<div class="moc">
+	  <select name="num" id="channel";>
+       <option value="0">0</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+	   <option value="3">3</option>
+     </select>
+    </div><br><br>
+	
+	
+	<button class="open"><b>Open</b></button>
+	
+    <button class="close"><b>Close</b></button> 	
+    
+</div>
+<div class="rec"> 
+    <div class="com">
+      <label for"status"><b>STATUS</b></label>
+	</div>
+	<div class="centered">
+     <input type="text" id="cent" name="status">
+    </div> 
+	
+	<div class="device">
+      <label for"name"><b>DEVICE NAME</b></label>
+	</div>
+	<div class="dev">
+     <input type="text" id="ams" name="device">
+    </div>
+	<div class="device">
+      <label for"mod"><b>MODE NUMBER</b></label>
+	</div>
+	<div class="dev">
+     <input type="text" id="cre" name="device">
+    </div>
+    <div class="device">
+      <label for"id"><b>DEVICE ID</b></label>
+	</div>
+	<div class="dev">
+     <input type="text" id="ice" name="device">
+    </div><br><br>
+    	
+	<button class="read"><b>Read</b></button>
+	<button class="write"><b>Write</b></button>
+	 
+</div>
+
 <div class="rectangle">
   
   <div class="rectangle1">

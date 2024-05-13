@@ -1,0 +1,220 @@
+<!DOCTYPE>
+<html>
+<head>
+
+<style>
+*{
+
+padding:0px;
+
+margin:0px;
+
+box-sizing:box-border;
+
+}
+.rectangle {
+    margin-top: 100px;
+    width: 550px;
+	height: 500px;
+	display: inline-block;
+	border: 2px solid black;
+	background-color: white;
+	 padding: 10px;
+	margin-left: 40px;
+	
+	
+	
+}
+
+.rectangle1 {
+    margin-top: 25px;
+	width: 450px;
+	height: 150px;
+	border: 2px solid yellow;
+	background-color: white;
+    padding: 15px 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.channel {
+    margin-left: 30px;
+	margin-right: 10px;
+	display: inline-block;
+	margin-top: 5px;
+	padding: 10px;
+}
+
+.drop{
+    margin-left: 40px;
+	display: inline-block;
+	width: 150px;
+	
+}
+
+.source {
+     margin-left: 30px;
+	 
+	 display: inline-block;
+	 margin-top: 5px;
+	 padding: 10px 10px;
+	 
+}
+
+.first {
+    margin-left: 30px;
+	display: inline-block;
+	margin-top: 5px;
+	padding: 10px 10px;
+}
+.key {
+    margin-left: 40px;
+	display: inline-block;
+	width: 150px;
+}
+    
+</style>
+</head>
+<body>
+<div class="rectangle">
+  
+  <div class="rectangle1">
+    
+	<div class="channel">
+      <label for"channel"><b>Channel Number</b></label>
+	</div>
+	<div class="drop">
+	  <select name="num" id="channel";>
+       <option value="0">0</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+	   <option value="3">3</option>
+     </select>
+    </div>
+	<br><br>
+	
+	<div class="channel">
+      <label for"sour"><b>Source Address</b></label>
+	</div>
+	<div class="drop">
+	 <select name="num" id="souc";>
+       <option value="0">0</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+	   <option value="3">3</option>
+     </select>
+    </div>
+  </div>
+	
+  
+  <div class="rectangle1">
+    
+	<div class="source">
+	  <label for"sync"><b>Sync Address</b></label>
+	</div> 
+	<div class="drop">
+	  <select name="num" id="sync";>
+       <option value="0">0</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+	   <option value="3">3</option>
+     </select>
+    </div>
+	<br><br>
+	
+	<div class="source">
+	  <label for"dest"><b>Destination Address</b></label>
+	</div> 
+	<div class="drop">
+	  <select name="num" id="dest";>
+       <option value="0">0</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+	   <option value="3">3</option>
+     </select>
+    </div>
+	<br><br>
+	
+	<div class="source">
+	  <label for"sec"><b>Transmission Secure</b></label>
+	</div> 
+	<div class="drop">
+	  <select name="num" id="transm";>
+       <option value="enable">ENABLE</option>
+       <option value="disable">DISABLE</option>
+	   
+     </select>
+    </div>
+ 
+</div>
+ 
+ </div>
+  
+<div class="rectangle">
+  
+  <div class="rectangle1">
+   
+   <div class="first">
+	  <label for"fir"><b>First Key</b></label>
+	</div> 
+	<div class="key">
+	  <select name="num" id="well";>
+       <option value="none">NONE</option>
+       <option value="start">START KEY</option>
+       <option value="up">UP KEY</option>
+	   <option value="down">DOWN KEY</option>
+	   <option value="stop">STOP KEY</option>
+     </select>
+	</div>
+	<br><br>
+	<div class="first">
+	  <label for"sec"><b>Second Key</b></label>
+	</div> 
+	<div class="key">
+	  <select name="num" id="riv";>
+       <option value="none">NONE</option>
+       <option value="start">START KEY</option>
+       <option value="up">UP KEY</option>
+	   <option value="down">DOWN KEY</option>
+	   <option value="stop">STOP KEY</option>
+     </select>
+	</div>
+  </div>
+  
+  <div class="rectangle1">
+    <div class="first">
+	  <label for"std"><b>Stand By Time Minute</b></label>
+	</div> 
+	<div class="key">
+	  <select name="num" id="time";>
+       <option value="0.5">0.5</option>
+       <option value="1">1</option>
+       <option value="1.5">1.5</option>
+	   <option value="2">2</option>
+	   <option value="2.5">2.5</option>
+	   <option value="3">3</option>
+       <option value="3.5">3.5</option>
+	   <option value="4">4</option>
+	   <option value="4.5">4.5</option>
+	   <option value="5">5</option>
+	  </select>
+	</div>
+	<br><br>
+	<div class="first">
+	  <label for"low"><b>Low Battery V</b></label>
+	</div> 
+	<div class="key">
+	  <select name="num" id="riv";>
+       <option value="none">NONE</option>
+       <option value="start">START KEY</option>
+       <option value="up">UP KEY</option>
+	   <option value="down">DOWN KEY</option>
+	   <option value="stop">STOP KEY</option>
+     </select>
+	</div>
+  </div>
+  
+</div> 
+</body>
+</html>
